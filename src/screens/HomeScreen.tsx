@@ -42,22 +42,12 @@ export const HomeScreen = () => {
 						renderItem={({ item }: any) => <MoviePoster movie={item} />}
 						sliderWidth={windowWidth}
 						itemWidth={300}
+						inactiveSlideOpacity={0.9}
 					/>
 				</View>
 
 				{/*Peliculas populares */}
-				{/* <View style={{ backgroundColor: 'red', height: 260 }}>
-					<Text>En Cine</Text>
-					<FlatList
-						data={peliculasEnCine}
-						renderItem={({ item }: any) => (
-							<MoviePoster movie={item} height={200} width={140} />
-						)}
-						keyExtractor={item => item.id.toString()}
-						horizontal={true}
-						showsHorizontalScrollIndicator={false}
-					/>
-				</View> */}
+
 				<HorizontalSlider movies={peliculasEnCine} title='En cine' />
 			</View>
 		</ScrollView>
