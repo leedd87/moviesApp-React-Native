@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { Button, Text, View } from 'react-native';
 import movieDB from '../api/movieDB';
 import { Movie, MovieDBMoviesResponse } from '../interfaces/movieInterface';
 
