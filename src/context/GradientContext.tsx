@@ -12,7 +12,7 @@ interface ContextProps {
     setPrevMainColors: (colors: ImageColors) => void
 }
 
-export const GradientContext = createContext({}) //TODO: definir un tipo
+export const GradientContext = createContext({} as ContextProps) //TODO: definir un tipo
 
 export const GradientProvider = ({ children }: any) => {
 
